@@ -41,8 +41,38 @@ ul,
 p{
   margin: 0px;
 }
+.conteiner{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Header */
+.header{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header > .conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list{
+  display: flex;
+  
+}
+.header-list > .item:not(:first-child){
+  margin-left: 50px;
+
+}
+
+.header-ct-list > .item:not(:first-child){
+  margin-left: 50px;
+}
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -55,6 +85,18 @@ p{
 
 .header-style {
   color: #000;
+}
+.header-style:hover,
+.header-style:focus{
+  color: var(--accent-color);
+}
+.header-ct:hover,
+.header-ct:focus{
+  color: var(--accent-color);
+}
+.header-menu:hover,
+.header-menu:focus{
+  color: var(--accent-color);
 }
 
 .header-menu {
@@ -125,6 +167,7 @@ border: none;
 .advantage{
   padding-top: 94px;
   padding-bottom: 94px;
+ 
 }
 
 .advantage-title{
@@ -146,12 +189,25 @@ color: var(--basic-color);
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+
+}
+
+.advantage-list{
+  padding-left: 0px;
+
+  display: flex;
 }
 
 /* Чим ми займаємося */
 .our-work{
   padding-bottom: 94px;
  
+}
+
+.our-work-list{
+  padding-left: 0px;
+
+  display: flex;
 }
 
 
@@ -248,4 +304,30 @@ font-style: normal;
 font-weight: 500;
 line-height: 26px; /* 162.5% */
 letter-spacing: 0.48px;
+padding:6px 25px;
+
+  margin-bottom: 50px;
+
+  border:none;
 }
+.portfolio-btn-list{
+  display:flex;
+  justify-content:center;
+  margin-left:0px;
+}
+
+.portfolio-list{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-left: 0x;
+margin-bottom: 50px;
+}
+
+
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+  color:#fff;
+  background-color:var(--accent-color);
+}
+
