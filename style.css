@@ -331,3 +331,18 @@ margin-bottom: 50px;
   background-color:var(--accent-color);
 }
 
+.hero-title{
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.footer-ctn{
+  display: block;
+}
