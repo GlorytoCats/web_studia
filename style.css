@@ -208,7 +208,14 @@ color: var(--basic-color);
   padding-left: 0px;
 
   display: flex;
+  gap: 30%;
+  flex-wrap: wrap;
+ 
 }
+ 
+ .our-work-list > .item{
+  flex-basis: calc((100% - 60px) / 3);
+ } 
 
 
 .our-work-title{
@@ -345,4 +352,9 @@ margin-bottom: 50px;
 
 .footer-ctn{
   display: block;
+}
+
+
+.team-photo{
+  display: flex;
 }
