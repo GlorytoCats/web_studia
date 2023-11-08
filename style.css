@@ -208,7 +208,7 @@ color: var(--basic-color);
   padding-left: 0px;
 
   display: flex;
-  gap: 30%;
+  gap: 30px;
   flex-wrap: wrap;
  
 }
@@ -226,6 +226,7 @@ color: var(--minor-color);
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+  padding-bottom: 50px;
 }
 
 /* Наша команда */
@@ -357,4 +358,10 @@ margin-bottom: 50px;
 
 .team-photo{
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-photo > .item{
+  flex-basis: calc((100% - 90px) / 4);
 }
