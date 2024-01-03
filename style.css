@@ -11,7 +11,11 @@ body {
   font-family: "Roboto", sans-serif;
  
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -216,7 +220,7 @@ color: var(--basic-color);
 }
 .advantage-list> .item:nth-child(2)::before{
   content: '';
-  background-image: url(./clock.png);
+  background-image: url(./clock.jpg);
   width: 70px;
   height: 70px;
   display:block;
@@ -260,6 +264,7 @@ color: var(--basic-color);
 
 .advantage-list > .item {
   flex-basis: calc((100% - 90px) / 4 );
+  
 }
 
 /* Чим ми займаємося */
@@ -341,8 +346,15 @@ color: var(--basic-color);
 
 .team-list > .item{
   flex-basis: calc((100% - 90px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+ .team-box{
+  padding: 30px 60px;
 
+ }
 
  /* portfolio */
 .portfolio{
@@ -360,8 +372,17 @@ color: var(--basic-color);
 
 .portfolio-list > .item{
   flex-basis: calc(( 100% - 60) / 3);
+  border-radius: 0px 0px 4px 4px;
+    border: 1px solid #eee;
+  background-color: #fff;
+ 
 
 }
+.portfolio-list > .item:hover,
+.portfolio-list > .item:focus{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
 
 .portfolio-btn{
   color: var(--minor-color);
@@ -382,6 +403,7 @@ padding:6px 25px;
   gap: 8px;
   justify-content:center;
   margin-left:0px;
+
 }
 
 /* footer */
@@ -430,6 +452,8 @@ margin-bottom: 50px;
 .portfolio-btn:focus{
   color:#fff;
   background-color:var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero-title{
@@ -446,6 +470,10 @@ margin-bottom: 50px;
 
 .footer-ctn{
   display: block;
+}
+
+.portfolio-box{
+  padding: 20px 24px;
 }
 
 
