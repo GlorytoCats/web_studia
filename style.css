@@ -126,6 +126,7 @@ p{
 /* Hero */
 .hero {
   background-color: var(--bg-color);
+  background-image: url(./people.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
 }
