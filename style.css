@@ -607,3 +607,9 @@ gap: 10px;
   gap: 70px;
   align-self: center;
 }
+
+
+.header-svg {
+  margin-right: 10px;
+  fill: currentColor;
+  }
